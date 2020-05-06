@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
-<ns2:test-suite xmlns="" xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1588796791066" stop="1588796815350">
+<ns2:test-suite xmlns="" xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1588796979672" stop="1588797006147">
   <name>Cadastrar no Sistema Automation Practice</name>
   <title>Cadastrar no Sistema Automation Practice</title>
   <test-cases>
-    <test-case start="1588796791070" stop="1588796815308" status="passed">
+    <test-case start="1588796979677" stop="1588797006100" status="passed">
       <name>Realizar um cadastro no sistema Automation Practice</name>
       <title>Realizar um cadastro no sistema Automation Practice</title>
       <steps>
-        <step start="1588796794920" stop="1588796794920" status="passed">
+        <step start="1588796985170" stop="1588796985170" status="passed">
           <name>Dado que eu visito o website Automation Practice</name>
           <title>Dado que eu visito o website Automation Practice</title>
           <attachments/>
         </step>
-        <step start="1588796794920" stop="1588796796154" status="passed">
+        <step start="1588796985170" stop="1588796986971" status="passed">
           <name>Quando eu clico no bot&#xE3;o Sign in</name>
           <title>Quando eu clico no bot&#xE3;o Sign in</title>
           <attachments/>
         </step>
-        <step start="1588796796154" stop="1588796800749" status="passed">
+        <step start="1588796986971" stop="1588796990241" status="passed">
           <name>Entao eu insiro um email valido</name>
           <title>Entao eu insiro um email valido</title>
           <attachments/>
         </step>
-        <step start="1588796800749" stop="1588796800863" status="passed">
+        <step start="1588796990241" stop="1588796990354" status="passed">
           <name>E clico no bot&#xE3;o para cadastrar conta</name>
           <title>E clico no bot&#xE3;o para cadastrar conta</title>
           <attachments/>
         </step>
-        <step start="1588796800863" stop="1588796814852" status="passed">
+        <step start="1588796990354" stop="1588797005666" status="passed">
           <name>Entao eu cadastro um novo usu&#xE1;rio</name>
           <title>Entao eu cadastro um novo usu&#xE1;rio</title>
           <attachments/>
@@ -38,7 +38,7 @@
       </attachments>
       <labels>
         <label name="severity" value="normal"/>
-        <label name="thread" value="21428800"/>
+        <label name="thread" value="21559880"/>
         <label name="host" value="DESKTOP-BGMR47K"/>
         <label name="feature" value="Cadastrar no Sistema Automation Practice"/>
         <label name="story" value="Realizar um cadastro no sistema Automation Practice"/>
@@ -48,7 +48,7 @@
   </test-cases>
   <labels>
     <label name="severity" value="normal"/>
-    <label name="thread" value="21428800"/>
+    <label name="thread" value="21559880"/>
     <label name="host" value="DESKTOP-BGMR47K"/>
   </labels>
 </ns2:test-suite>
