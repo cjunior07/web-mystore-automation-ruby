@@ -1,6 +1,6 @@
 Dado("que eu visito o website Automation Practice") do
-  visit '/'
   @cadastro = Cadastro.new
+  @cadastro.load
 end
 
 Quando("eu clico no botão Sign in") do
@@ -16,10 +16,6 @@ Entao("clico no botão para cadastrar conta") do
 end
 
 Entao("eu cadastro um novo usuário") do
-   @cadastro.cadastro
-   sleep(5)
+  @cadastro.cadastro
+  sleep(5)
 end
-
-
-
-  

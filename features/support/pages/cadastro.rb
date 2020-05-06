@@ -3,25 +3,26 @@
 #Turno matutino
 
 class Cadastro < SitePrism::Page
+  set_url ""
 
-    def initialize
-        @estrutura = EstruturaFormulario.new 
-    end
+  def initialize
+    @estrutura = EstruturaFormulario.new
+  end
 
-    def sign_in
-        @estrutura.sign_in
-    end
+  def sign_in
+    @estrutura.sign_in
+  end
 
-    def criar_email
-        @estrutura.criar_email
-    end
+  def criar_email
+    @estrutura.criar_email
+  end
 
-    def confirmar_conta
-        @estrutura.confirmar_conta
-    end
+  def confirmar_conta
+    @estrutura.confirmar_conta
+  end
 
-    def cadastro
-        @estrutura.preencher_formulario
-        @estrutura.confirmar_cadastro
-    end
+  def cadastro
+    @estrutura.preencher_formulario
+    @estrutura.confirmar_cadastro
+  end
 end
