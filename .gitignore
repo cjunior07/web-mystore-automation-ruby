@@ -2,5 +2,6 @@
 *.json
 *.html
 *.txt
+*.xml
 /Gemfile.lock
-debug.log
+*.log
