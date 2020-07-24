@@ -7,15 +7,6 @@ require "rspec"
 require "site_prism"
 require "faker"
 require "securerandom"
-require "cpf_faker"
-require "ffi"
-require "business"
-
-require_relative "../support/helpers/page_helper.rb"
-require_relative "../support/helpers/file_helper.rb"
-
-# Configuração para FAKER Brasileiro
-Faker::Config.locale = "pt-BR"
 
 # criar constante com nome browsers
 
@@ -28,7 +19,7 @@ Capybara.register_driver :selenium do |app|
     option = ::Selenium::WebDriver::Firefox::Options.new(args: %w[--headless --disable-gpu --disable-infobars])
     Capybara::Selenium::Driver.new(app, browser: :firefox, options: option, desired_capabilities: { accept_insecure_certs: true })
   when "chrome_headless"
-    option = ::Selenium::WebDriver::Chrome::Options.new(args: %w[--headless --window-size=1920x1080 --disable-gpu --log-level=3])
+    option = ::Selenium::WebDriver::Chrome::Options.new(args: %w[--headless --disable-gpu --log-level=3])
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: option, desired_capabilities: { accept_insecure_certs: true })
   when "firefox"
     option = ::Selenium::WebDriver::Firefox::Options.new(args: %w[--disable-gpu --disable-infobars])
@@ -41,7 +32,7 @@ end
 
 Capybara.configure do |config|
   config.default_driver = :selenium
-  config.app_host = "http://automationpractice.com/index.php"
+    config.app_host = "http://automationpractice.com/index.php" 
 end
 
 Capybara.default_max_wait_time = 20

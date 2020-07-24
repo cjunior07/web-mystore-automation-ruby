@@ -3,9 +3,8 @@ Before do |scenario|
 end
 
 After do |scenario|
-  sufix = ("O cenário FALHOU!" if scenario.failed?) || "Cenário executado com Sucesso !\n\n"
-  puts "#{sufix}"
-  Capybara.reset!
+  sufix = ("FALHOU !" if scenario.failed?) || "executado com Sucesso !"
+  puts "Cenário: #{scenario.name} #{sufix}"
 end
 
 After do |scenario|
@@ -13,7 +12,9 @@ After do |scenario|
   file_name = scenario.name.tr(" ", "_").upcase
   sufix = ("FALHOU" if scenario.failed?) || "PASSOU"
   shot = "logs/shots/#{file_name}_#{sufix}.png"
+  page.switch_to_window(windows.last)
   puts "Tirando print da tela"
   page.save_screenshot(shot)
   embed(shot, "image/png", "Clique aqui para ver o print da tela")
+  #Capybara.reset!
 end
